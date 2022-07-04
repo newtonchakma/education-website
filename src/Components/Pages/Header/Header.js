@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../../images/logo-edu_black.jpg'
 
 const Header = () => {
     return (
@@ -23,7 +24,9 @@ const Header = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a class="">
+    <img src={logo} alt="Album" />
+    </a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
@@ -41,9 +44,7 @@ const Header = () => {
       <li><a>Item 3</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Get started</a>
-  </div>
+  
 </div>
     );
 };

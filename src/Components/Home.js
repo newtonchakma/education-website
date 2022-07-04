@@ -4,6 +4,7 @@ import CourseInfo from './Pages/Courses/CourseInfo';
 import CourseSamary from './Pages/CourseSamary';
 import FeatureInfo from './Pages/Features/FeatureInfo';
 import Header from './Pages/Header/Header';
+import TeamInfo from './Pages/OurTeams/TeamInfo';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <FeatureInfo></FeatureInfo>
             <CourseInfo></CourseInfo>
             <CourseSamary></CourseSamary>
+            <TeamInfo></TeamInfo>
         </div>
     );
 };
