@@ -1,8 +1,12 @@
 import React from 'react';
 import Course from './Course';
 import webDesign from '../../../images/webDesign.jpg';
-import dataSecience from '../../../images/data.jpeg';
+
 import endineer from '../../../images/endineer.jpeg';
+import design from '../../../images/web4.jpg';
+import mechine from '../../../images/mechine.jpg';
+import imfor from '../../../images/imfor.jpg';
+import python from '../../../images/python.jpg';
 
 
 import modarator1 from '../../../images/modarator1.jpg'
@@ -23,12 +27,12 @@ const CourseInfo = () => {
          <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
         
           <Course courseTitle="Full stack web development" modarator={modarator1} modaratorName="Jhon deo" price="120.99" students='7489' img={webDesign}></Course>
-          <Course courseTitle="Full stack web development" modarator={modarator2} modaratorName="Sumon de" price="520.00" students='4489' img={dataSecience}></Course>
-          <Course courseTitle="Full stack web development" modarator={modarator3} modaratorName="Liza sha" price="869.99" students='2489'  img={endineer}></Course>
+          <Course courseTitle="The Complete Python Course" modarator={modarator2} modaratorName="Sumon de" price="520.00" students='4489' img={python}></Course>
+          <Course courseTitle="Information Technology Essentials" modarator={modarator3} modaratorName="Liza sha" price="869.99" students='2489'  img={imfor}></Course>
          
-          <Course courseTitle="Full stack web development" modarator={modarator4} modaratorName="Danton kum" price="120.99" students='1489' img={webDesign}></Course>
-          <Course courseTitle="Full stack web development" modarator={modarator5} modaratorName="Sumit kanti" price="520.00" students='4489' img={dataSecience}></Course>
-          <Course courseTitle="Full stack web development" modarator={modarator6} modaratorName="Minki " price="389.99" students='2489'  img={endineer}></Course>
+          <Course courseTitle="Machine Learning" modarator={modarator4} modaratorName="Danton kum" price="120.99" students='1489' img={mechine}></Course>
+          <Course courseTitle=" web design" modarator={modarator5} modaratorName="Sumit kanti" price="520.00" students='4489' img={design}></Course>
+          <Course courseTitle="Goal Setting & Time Management" modarator={modarator6} modaratorName="Minki " price="389.99" students='2489'  img={endineer}></Course>
          
            
         </div>

@@ -4,7 +4,12 @@ const Course = ({courseTitle,price,modaratorName,img,students,modarator}) => {
   return (
     <div>
   
-      <div class="card  bg-base-100 shadow-xl">
+      <div
+      
+      data-aos="zoom-in-right"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      class="card  bg-base-100 shadow-xl">
   <figure>
   
     <img className='link link-hover' src={img} alt="Shoes" />

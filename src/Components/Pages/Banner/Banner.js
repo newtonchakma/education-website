@@ -11,7 +11,7 @@ const Banner = () => {
                     <br className="hidden lg:inline-block"/> platform that take you
                     <br className="hidden lg:inline-block"/> next level.
                 </h1>
-                <p className="leading-relaxed md:text-xl text-accent ">World-class training and development programs developed by top teachers</p>
+                <p className="leading-relaxed md:text-xl text-white ">World-class training and development programs developed by top teachers</p>
                 <button className="btn btn-wide my-8 btn-outline btn-accent font-bold text-2xl text-white">JOIN NOW</button>
             </div>  
         </div>
