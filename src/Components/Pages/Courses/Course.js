@@ -7,14 +7,14 @@ const Course = ({courseTitle,price,modaratorName,img,students,modarator}) => {
       <div class="card  bg-base-100 shadow-xl">
   <figure>
   
-    <img src={img} alt="Shoes" />
+    <img className='link link-hover' src={img} alt="Shoes" />
  </figure>
   <div class="p-2">
-    <strong class="text-lg ">
+    <strong class="text-lg link link-hover">
       {courseTitle}
     </strong>
       <div className='flex justify-between mt-2  '>
-           <div className='flex'>
+           <div className='flex link link-hover'>
 
               <div class="avatar">
                  <div class="w-8 rounded-full ring-offset-base-100 ring-offset-2">

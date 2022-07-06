@@ -1,9 +1,9 @@
 #banner{
-    background-image: url('../../../images/banner.avif');
+    background-image: url('../../../images/banner.jpg');
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: rgba(41, 41, 41, 0.527);
+    background-color: rgba(25, 25, 25, 0.527);
     background-blend-mode: color;
 }
