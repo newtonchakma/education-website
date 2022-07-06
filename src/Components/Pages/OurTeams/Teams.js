@@ -4,7 +4,7 @@ const Teams = ({position,img,modaratorName}) => {
     return (
         <div class="  bg-base-100  text-center">
         <div class="avatar text-center">
-  <div class="w-48 rounded-full ring ring-gray ring-offset-base-100  text-center">
+  <div class="w-52 rounded-full ring ring-gray ring-offset-base-100  text-center">
     <img src={img} alt='' />
   </div>
 </div>

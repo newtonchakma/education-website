@@ -21,11 +21,11 @@ const TeamInfo = () => {
      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 team'>
     
       <Teams  modaratorName="Vanugopal" position=" CTO & Co-Founder" img={modarator}></Teams>
-      <Teams  modaratorName="Vanugopal" position=" Director- Carriculum" img={modarator7}></Teams>
-      <Teams  modaratorName="Vanugopal" position=" Senior manager-technology" img={modarator6}></Teams>
-      <Teams  modaratorName="Vanugopal" position=" Senior Web-developer" img={modarator4}></Teams>
-      <Teams  modaratorName="Vanugopal" position=" Senior carricolum enginner" img={modarator3}></Teams>
-      <Teams  modaratorName="Vanugopal" position=" Senior carricolum enginner" img={modarator2}></Teams>
+      <Teams  modaratorName="Bipulessor" position=" Director- Carriculum" img={modarator7}></Teams>
+      <Teams  modaratorName="Sumendra" position=" Senior manager-technology" img={modarator6}></Teams>
+      <Teams  modaratorName="Arjun tahkur" position=" Senior Web-developer" img={modarator4}></Teams>
+      <Teams  modaratorName="Shima " position=" Senior carricolum enginner" img={modarator3}></Teams>
+      <Teams  modaratorName="Justika" position=" Senior carricolum enginner" img={modarator2}></Teams>
      
     </div>
    </div>
