@@ -1,14 +1,21 @@
 import React from 'react';
 import login from '../../../images/login.png'
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import auth from '../../../firebase.init';
 
 const SignUp = () => {
     const { register, handleSubmit } = useForm();
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const onSubmit = data =>{
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
+    const onSubmit = async data =>{
+        await createUserWithEmailAndPassword(data.email,data.password)
         console.log(data);
     }
     return (
