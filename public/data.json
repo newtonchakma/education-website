@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+
+
+
+[
+    {
+      "courseTitle": "Information Technology Essentials",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/Bg3TXXX/endineer.jpg",
+      "instructorImg": "https://i.ibb.co/BPwRxT5/modarator1.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    },
+    {
+      "courseTitle": "Machine Learning",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/zscMqgK/mechine.jpg",
+      "instructorImg": "https://i.ibb.co/mbtLzJ8/modarator2.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    },
+    {
+      "courseTitle": "The Complete Python Course",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/TY3LTQ6/python.jpg",
+      "instructorImg": "https://i.ibb.co/n3NdG8H/modarator3.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    },
+    {
+      "courseTitle": "Web design",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/LdRrYrY/web-Design.jpg",
+      "instructorImg": "https://i.ibb.co/RT2wxsR/modarator4.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    },
+    {
+      "courseTitle": "Full stack web development",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/9czfp2h/web4.jpg",
+      "instructorImg": "https://i.ibb.co/k03ThNj/modarator5.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    },
+    {
+      "courseTitle": "Goal Setting & Time Management",
+      "price": "$360.38",
+      "courseImg": "https://i.ibb.co/gmgdzDf/imfor.jpg",
+      "instructorImg": "https://i.ibb.co/ng3pmR5/modarator6.jpg",
+      "instructorName": "Danton kum",
+      "students": "2489"
+    }
+  ]

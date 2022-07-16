@@ -9,6 +9,8 @@ import imfor from '../../../images/imfor.jpg';
 import python from '../../../images/python.jpg';
 
 
+
+
 import modarator1 from '../../../images/modarator1.jpg'
 import modarator2 from '../../../images/modarator2.jpg'
 import modarator3 from '../../../images/modarator3.jpg'
@@ -16,23 +18,52 @@ import modarator4 from '../../../images/modarator4.jpg'
 import modarator5 from '../../../images/modarator5.jpg'
 import modarator6 from '../../../images/modarator6.jpg'
 
+
+
+
+
+
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 const CourseInfo = () => {
+    const [services,setServices]= useState([]);
+
+    useEffect(()=>{
+        const url = `http://localhost:5000/service`;
+        fetch(url)
+        .then(res=>res.json())
+        // .then(data=>console.log(data))
+         .then(data=>setServices(data))
+    },[])
     return (
         <div className='py-24'>
             <div className='text-center'>
-                <h1 className='text-4xl font-bold uparcase font'>OUR TOP COURSES</h1>
+                <h1 className='text-4xl font-bold uppercase font'>OUR TOP COURSES</h1>
             
             </div>
               <div className='mt-8 mb-9 px-10'>
          <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
-        
+
+
+
+        {
+            services.map(service=><Course
+            key={service._id}
+            service={service}
+            ></Course>)
+        }
+
+
+
+        {/* 
           <Course courseTitle="Full stack web development" modarator={modarator1} modaratorName="Jhon deo" price="120.99" students='7489' img={webDesign}></Course>
           <Course courseTitle="The Complete Python Course" modarator={modarator2} modaratorName="Sumon de" price="520.00" students='4489' img={python}></Course>
           <Course courseTitle="Information Technology Essentials" modarator={modarator3} modaratorName="Liza sha" price="869.99" students='2489'  img={imfor}></Course>
          
           <Course courseTitle="Machine Learning" modarator={modarator4} modaratorName="Danton kum" price="120.99" students='1489' img={mechine}></Course>
           <Course courseTitle=" web design" modarator={modarator5} modaratorName="Sumit kanti" price="520.00" students='4489' img={design}></Course>
-          <Course courseTitle="Goal Setting & Time Management" modarator={modarator6} modaratorName="Minki " price="389.99" students='2489'  img={endineer}></Course>
+          <Course courseTitle="Goal Setting & Time Management" modarator={modarator6} modaratorName="Minki " price="389.99" students='2489'  img={endineer}></Course> */}
          
            
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Course = ({courseTitle,price,modaratorName,img,students,modarator}) => {
+const Course = ({service}) => {
+  const {courseTitle,price,instructorName,courseImg,students,instructorImg}= service;
   return (
     <div>
   
@@ -12,7 +13,7 @@ const Course = ({courseTitle,price,modaratorName,img,students,modarator}) => {
       class="card  bg-base-100 shadow-xl">
   <figure>
   
-    <img className='link link-hover' src={img} alt="Shoes" />
+    <img className='link link-hover' src={courseImg} alt="Shoes" />
  </figure>
   <div class="p-2">
     <strong class="text-lg link link-hover">
@@ -23,11 +24,11 @@ const Course = ({courseTitle,price,modaratorName,img,students,modarator}) => {
 
               <div class="avatar">
                  <div class="w-8 rounded-full ring-offset-base-100 ring-offset-2">
-                   <img src={modarator} alt=''/>
+                   <img src={instructorImg} alt=''/>
 
                   </div>
                </div>
-             <div className='px-3'> <p>{modaratorName}</p></div>
+             <div className='px-3'> <p>{instructorName}</p></div>
            </div>
         
        

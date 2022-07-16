@@ -1,7 +1,25 @@
 import React from 'react';
 import logo from '../../../images/logo-edu_black.jpg'
+import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+   
+  
+};
+  const menuItems = <>
+  <li><Link to="/home">HOME</Link></li>
+  <li><Link to="/contact">CONTACT</Link></li>
+  <li><Link to="/courses">COURSES</Link></li>
+  <li><Link to="/about">ABOUT</Link></li>
+  <li>{user ? <button className="btn btn-ghost" onClick={logout} >SIGN OUT</button> : <Link to="/login">LOGIN</Link>}</li> 
+  </>
     return (
         <div class="navbar bg-base-100 px-10">
   <div class="navbar-start">
@@ -10,10 +28,7 @@ const Header = () => {
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-      <li><a>HOME</a></li>
-      <li><a>COURSES</a></li>
-      <li><a>ABOUT</a></li>
-      <li><a>CONTACT US</a></li>
+      {menuItems}
       </ul>
     </div>
     <a class="link link-hover">
@@ -22,10 +37,7 @@ const Header = () => {
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-      <li><a>HOME</a></li>
-      <li><a>COURSES</a></li>
-      <li><a>ABOUT</a></li>
-      <li><a>CONTACT US</a></li>
+    {menuItems}
     </ul>
   </div>
   

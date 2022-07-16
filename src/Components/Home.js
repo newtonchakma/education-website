@@ -7,12 +7,13 @@ import CourseSamary from './Pages/CourseSamary';
 import FeatureInfo from './Pages/Features/FeatureInfo';
 import Footer from './Pages/Footer';
 import Header from './Pages/Header/Header';
+import Login from './Pages/Login/Login';
 import TeamInfo from './Pages/OurTeams/TeamInfo';
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+
             <Banner></Banner>
             <FeatureInfo></FeatureInfo>
             <CourseInfo></CourseInfo>
@@ -20,7 +21,7 @@ const Home = () => {
             <TeamInfo></TeamInfo>
             <About></About>
             <Contact></Contact>
-            <Footer></Footer>
+            
         </div>
     );
 };
